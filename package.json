@@ -1,0 +1,32 @@
+{
+  "name": "data_rest_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YiZhang-Paul/Snooker_Data_REST_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YiZhang-Paul/Snooker_Data_REST_API/issues"
+  },
+  "homepage": "https://github.com/YiZhang-Paul/Snooker_Data_REST_API#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.5",
+    "sinon": "^7.1.0"
+  }
+}
