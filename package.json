@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app",
     "dev": "nodemon app",
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test-unit": "mocha tests/unit/ --reporter spec",
+    "test-int": "mocha tests/integration/ --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -20,13 +21,16 @@
   },
   "homepage": "https://github.com/YiZhang-Paul/Snooker_Data_REST_API#readme",
   "dependencies": {
+    "config": "^2.0.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.7"
+    "mongoose": "^5.3.9",
+    "mongoose_model": "github:YiZhang-Paul/Snooker_Data_Mongoose_Model"
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.5",
-    "sinon": "^7.1.0"
+    "sinon": "^7.1.1"
   }
 }
