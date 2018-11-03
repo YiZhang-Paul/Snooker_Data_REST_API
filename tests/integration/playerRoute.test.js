@@ -1,3 +1,5 @@
+process.env.NODE_ENV = 'testing';
+
 const app = require('../../app');
 const server = app.server;
 const connection = app.connection;
